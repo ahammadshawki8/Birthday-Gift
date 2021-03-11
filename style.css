@@ -80,6 +80,7 @@ body {
     padding: 1em 2em;
     border: white 2px solid;
     margin-top: 40px;
+    margin-bottom: 10px;
     opacity: 0;
     animation-name: btn;
     animation-delay: 2s;
@@ -112,7 +113,7 @@ body {
 
 
 #main-box {
-    margin-top: -750px;
+    margin-top: -775px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -196,7 +197,7 @@ body {
     animation-duration: 4s;
     animation-delay: 10s;
     animation-fill-mode: forwards;
-    font-size: 40px;
+    font-size: 28px;
 }
 
 @keyframes l1 {
@@ -215,6 +216,7 @@ body {
     animation-duration: 4s;
     animation-delay: 16s;
     animation-fill-mode: forwards;
+    font-size: 24px;
 }
 
 @keyframes l2 {
@@ -232,7 +234,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     top: -400px;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 @keyframes l3{
@@ -250,6 +252,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     top: -430px;
+    font-size: 24px;
 }
 
 @keyframes l4 {
@@ -267,7 +270,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     top: -450px;
-    font-size: 45px;
+    font-size: 33px;
 }
 
 @keyframes l5 {
@@ -285,6 +288,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     top: -480px;
+    font-size: 25px;
 }
 
 @keyframes l6 {
@@ -302,7 +306,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     top: -510px;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 @keyframes l7 {
@@ -310,4 +314,91 @@ body {
     25% {opacity: 1;}
     75% {opacity: 1;}
     100% {opacity: 0;}
+}
+
+@media(max-width: 980px) {
+    #showcase h1 {
+        font-size: 40px;
+    }
+
+    #main-box {
+        margin-top: -800px;
+    }
+
+    #l1 {font-size: 23px; top: -370px;}
+    #l2 {font-size: 18px; top: -395px;}
+    #l3 {font-size: 25px; top: -420px;}
+    #l4 {font-size: 19px; top: -445px;}
+    #l5 {font-size: 25px; top: -470px;}
+    #l6 {font-size: 19px; top: -495px;}
+    #l7 {font-size: 25px; top: -520px;}
+
+}
+
+@media (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    #btn {
+        font-size: 12px;
+    }
+
+    @keyframes btn {
+        0% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 1;
+            margin-top: 40px;
+        }
+    
+        100% {
+            opacity: 1;
+            margin-top: 100px;
+    }
+    }
+
+    #showcase h1 {
+        font-size: 20px;
+    }
+
+    #content {
+        font-size: 14px;
+    }
+
+    #main-box {
+        grid-gap: 0.5em;
+        width: 100%;
+        margin: auto;
+        margin-top: -650px;
+        margin-right: 0px;
+        padding: 0;
+        text-align: center;
+        align-self: center;
+    }
+
+    .small-box{
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        padding: 2px;
+    }
+
+
+    #l1 {font-size: 12px; top: -370px;}
+    #l2 {font-size: 10px; top: -395px;}
+    #l3 {font-size: 14px; top: -420px;}
+    #l4 {font-size: 10px; top: -445px;}
+    #l5 {font-size: 14px; top: -470px;}
+    #l6 {font-size: 10px; top: -495px;}
+    #l7 {font-size: 14px; top: -525px;}
 }
